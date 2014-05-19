@@ -2,17 +2,19 @@
 layout: post
 title: "Install Puppet Server on centOS 6.5"
 modified: 2014-05-19 09:36:56 +1000
+category: articles
 tags: [puppet,centos]
 image:
-  feature: 
+  feature: computer_mouse.jpg
   credit: 
   creditlink: 
-comments: 
-share: 
+comments: true
+share: true
 ---
 
-# Download puppet-server from Puppet Labs
+#### Download puppet-server from Puppet Labs
 ```yum install -y puppet-server```
+
 #### Start Puppet-Server
 ```/etc/init.d/puppetmaster start```
 
@@ -32,9 +34,9 @@ Add passenger to be loaded from http.conf gloabaly
 
 add this in Load Module section
 
-```LoadModule passenger_module /usr/lib/ruby/gems/1.8/gems/passenger-4.0.42/buildout/apache2/mod_passenger.so
-PassengerRoot /usr/lib/ruby/gems/1.8/gems/passenger-4.0.42
-PassengerDefaultRuby /usr/bin/ruby```
+```LoadModule passenger_module /usr/lib/ruby/gems/1.8/gems/passenger-4.0.42/buildout/apache2/mod_passenger.so```
+```PassengerRoot /usr/lib/ruby/gems/1.8/gems/passenger-4.0.42```
+```PassengerDefaultRuby /usr/bin/ruby```
  
 #### Create the directory structure for Puppet Master Rack Application
 mkdir -p /usr/share/puppet/rack/puppetmasterd
