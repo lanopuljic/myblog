@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Install Puppet Server on centOS 6.5"
+title: "Install Puppet Server on CentOS 6.5"
 modified: 2014-05-19 09:36:56 +1000
 category: articles
-tags: [puppet,centos]
+tags: [puppet,centos 6.5]
 image:
   feature: computer_mouse.jpg
   credit: 
