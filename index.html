@@ -1,12 +1,14 @@
 ---
 layout: page
-title: Latest Posts
-description: "A simple and clean responsive Jekyll theme for words and photos."
-tags: [Jekyll, theme, themes, responsive, blog, minimalism]
+title: Lano Puljic Blog
+description: "Lano Puljic Blog where all geeky stuff happens"
+tags: [blog, geek, knowledge, nerd, tutorials]
 ---
-<head>
-<meta name="google-site-verification" content="-nhqUFIBYvwQ-lIEYF-ECAc4rJn_WmX_s7kdo582JqE" />
-</head>
+<html>
+	<head>
+		<meta name="google-site-verification" content="-nhqUFIBYvwQ-lIEYF-ECAc4rJn_WmX_s7kdo582JqE" />
+	</head>
+</html>
 <ul class="post-list">
 {% for post in site.posts limit:10 %} 
   <li><article><a href="{{ site.url }}{{ post.url }}">{{ post.title }} <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></span></a></article></li>
