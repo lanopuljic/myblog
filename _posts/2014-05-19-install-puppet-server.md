@@ -12,61 +12,56 @@ comments: true
 share: true
 ---
 
-
-{% highlight ruby linenos %}
-def show
-  puts "Outputting a very lo-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-ong lo-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-ong line"
-  @widget = Widget(params[:id])
-  respond_to do |format|
-    format.html # show.html.erb
-    format.json { render json: @widget }
-  end
-end
-{% endhighlight %}
-
-
-
-
 #### Download puppet-server from Puppet Labs
-```yum install -y puppet-server```
+{% highlight bash linenos %}yum install -y puppet-server{% endhighlight %}
 
 #### Start Puppet-Server
-```/etc/init.d/puppetmaster start```
+{% highlight bash linenos %}/etc/init.d/puppetmaster start{% endhighlight %}
 
 #### Set Puppet Master to run on startup ( if you usng passenged no need to do this)
-```puppet resource service puppetmaster ensure=running enable=true```
+{% highlight bash linenos %}puppet resource service puppetmaster ensure=running enable=true{% endhighlight %}
 
 #### Download apache and necessary dependencies
-```yum install -y httpd httpd-devel mod_ssl ruby-devel rubygems gcc-c++ curl-devel zlib-devel make automake openssl-devel```
- 
+
+{% highlight bash linenos %}yum install -y httpd httpd-devel mod_ssl ruby-devel rubygems gcc-c++ curl-devel zlib-devel make automake openssl-devel{% endhighlight %}
+
+    
 #### Install Rack/Passenger
-```gem install rack passenger
-passenger-install-apache2-module ```
+{% highlight bash linenos %}
+gem install rack passenger
+passenger-install-apache2-module
+{% endhighlight %}
 
 Add passenger to be loaded from http.conf gloabaly
 
-```vi etc/http/conf/http.con```
+{% highlight bash linenos %}vi etc/http/conf/http.con{% endhighlight %}
 
-add this in Load Module section
 
-```LoadModule passenger_module /usr/lib/ruby/gems/1.8/gems/passenger-4.0.42/buildout/apache2/mod_passenger.so```
-```PassengerRoot /usr/lib/ruby/gems/1.8/gems/passenger-4.0.42```
-```PassengerDefaultRuby /usr/bin/ruby```
+Add this in Load Module section
+
+{% highlight apache %}
+LoadModule passenger_module /usr/lib/ruby/gems/1.8/gems/passenger-4.0.42/buildout/apache2/mod_passenger.so
+PassengerRoot /usr/lib/ruby/gems/1.8/gems/passenger-4.0.42```
+PassengerDefaultRuby /usr/bin/ruby
+{% endhighlight %}
  
 #### Create the directory structure for Puppet Master Rack Application
+
+{% highlight bash linenos %}
 mkdir -p /usr/share/puppet/rack/puppetmasterd
 mkdir /usr/share/puppet/rack/puppetmasterd/public /usr/share/puppet/rack/puppetmasterd/tmp
 cp /usr/share/puppet/ext/rack/config.ru  /usr/share/puppet/rack/puppetmasterd/
 chown puppet:puppet /usr/share/puppet/rack/puppetmasterd/config.ru
+{% endhighlight  %}
 
 Create a virtual host file for puppet:
 
-```vi /etc/httpd/conf.d/puppetmaster.conf```
+{% highlight bash linenos %}vi /etc/httpd/conf.d/puppetmaster.conf{% endhighlight %}
 
 Add Following in puppetmaster.conf
 
 RHEL/CentOS:
-
+{% highlight apache %}
 #### And the passenger performance tuning settings:
 PassengerHighPerformance On
 #### Set this to about 1.5 times the number of CPU cores in your master:
@@ -110,26 +105,30 @@ Listen 8140
     ErrorLog /var/log/httpd/puppet-server.example.com_ssl_error.log
     CustomLog /var/log/httpd/puppet-server.example.com_ssl_access.log combined
 </VirtualHost>
-
+{% endhighlight %}
 Start up Apache:
  
-```/etc/init.d/puppetmaster stop
-/etc/init.d/httpd start```
+{% highlight bash linenos %}
+/etc/init.d/puppetmaster stop
+/etc/init.d/httpd start
+{% endhighlight %}
 
 If you get follwoing meesage
 
 Starting httpd: httpd: Could not reliably determine the server's fully qualified domain name, using vlxpuppet01.qbe.com.au for ServerName
 
-```edit the /etc/hosts file and add the server and ip address.```
+Edit host file and add the server and ip address.
+{% highlight bash linenos %}vi /etc/hosts{% endhighlight %}
 
 Disable WEBrick: ( No need to do this if you didnt demonize the process in above step)
-```chkconfig puppetmaster off```
+{% highlight bash linenos %}chkconfig puppetmaster off{% endhighlight %}
 
-```Enable Apache on boot
-chkconfig httpd on 34```
+Enable Apache on boot
+{% highlight bash linenos %}chkconfig httpd on 34{% endhighlight %}
 
 Make sure the port is open and it’s listening:
 
-```netstat -ln | grep 8140
- 
-tcp    0  0 0.0.0.0:8140         0.0.0.0:*              LISTEN```
+{% highlight bash linenos %}
+netstat -ln | grep 8140
+tcp    0  0 0.0.0.0:8140         0.0.0.0:*              LISTEN
+{% endhighlight %}

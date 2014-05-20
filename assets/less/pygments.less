@@ -1,12 +1,29 @@
 .highlight {
 	margin-bottom: 1.5em;
 	.font(12);
-	border: 1px solid darken(@body-color, 5);
+	.lineno {
+		border-right: 1px solid #CCCCCC;
+		color: #CCCCCC;
+		display: inline-block;
+		padding: 0 5px;
+		}
 	pre {
-		position: relative;
-		margin: 0;
-		padding: 1em;
-	}
+		background-color: #F5F5F5;
+		border: 1px solid #CCCCCC;
+		color: #333333;
+		display: block;
+		line-height: 1.42857;
+		margin: 0 0 10px;
+		word-break: break-all;
+		word-wrap: break-word;
+		padding: 0.5em;
+	code {
+		display: block;
+		overflow-x: auto;
+		white-space: pre;
+		word-wrap: normal;
+		}
+}
 	.hll { background-color: #ffffcc }
 	.c { color: #999988; font-style: italic } /* Comment */
 	.err { color: #a61717; background-color: #e3d2d2 } /* Error */
