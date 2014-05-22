@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Installing Puppet Dashboard CentOS 6.5"
+description: "How to install Puppet Dashboard on Centos 6.5"
 modified: 2014-05-20 23:10:23 +1000
 tags: [puppet,dashboard,centOS 6.5]
 category: articles
