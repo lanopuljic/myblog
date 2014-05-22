@@ -6,7 +6,7 @@ modified: 2014-05-19 09:36:56 +1000
 category: articles
 tags: [puppet,centos 6.5]
 image:
-  feature: site-logo.png
+  feature: computer_mouse.jpg
   credit: 
   creditlink: 
 comments: true
