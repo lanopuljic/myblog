@@ -1,6 +1,7 @@
 ---
 layout: page
 permalink: /about/
+description: My Story
 title: About Me
 tags: [about,me,story]
 modified: 2013-09-13
