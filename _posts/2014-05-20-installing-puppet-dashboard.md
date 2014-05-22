@@ -5,7 +5,7 @@ modified: 2014-05-20 23:10:23 +1000
 tags: [puppet,dashboard,centOS 6.5]
 category: articles
 image:
-  feature: computer_mouse.jpg
+  feature: 
   credit: 
   creditlink: 
 comments: true
