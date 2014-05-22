@@ -3,8 +3,8 @@ layout: post
 title: "Installing Puppet Dashboard CentOS 6.5"
 description: "How to install Puppet Dashboard on Centos 6.5"
 modified: 2014-05-20 23:10:23 +1000
-tags: [puppet,dashboard,centOS 6.5]
 category: articles
+tags: [puppet,dashboard,centOS 6.5]
 image:
   feature: 
   credit: 
@@ -12,6 +12,7 @@ image:
 comments: true
 share: true
 ---
+
 Install Following Packages
 
 {% highlight bash linenos %}yum -y install puppet-dashboard{% endhighlight %}
