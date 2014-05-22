@@ -1,9 +1,8 @@
 ---
 layout: post
 title: "Install Puppet Server on CentOS 6.5"
-description: "How to install Puppet Server on Centos 6.5 LANO"
+description: "How to install Puppet Server on Centos 6.5"
 modified: 2014-05-19 09:36:56 +1000
-image: site-logo.png
 category: articles
 tags: [puppet,centos 6.5]
 image:
