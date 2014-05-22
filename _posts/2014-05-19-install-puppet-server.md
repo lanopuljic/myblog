@@ -6,7 +6,7 @@ modified: 2014-05-19 09:36:56 +1000
 category: articles
 tags: [puppet,centos 6.5]
 image:
-  feature: 
+  feature: site-logo.png
   credit: 
   creditlink: 
 comments: true
