@@ -122,7 +122,7 @@ If ther is no error you should be able to load puppet dashboard from your browse
 
 ###Enable inventory support
 
-When you add a node to puppet, Click on the node and you will see ```INVENTORY``` at first this will not display anything,
+When you add a node to puppet, Click on the node and you will see **INVENTORY** at first this will not display anything,
 if you follow the instruction below you will get inventory working.
 
 In a nutshell, you need to change just a few settings.
