@@ -200,7 +200,10 @@ Restart dashboard
 
 Loging to dashboard and see if it works.
 
-<br>
-{% for post in site.related_posts %}
-  <a href="{{ post.url }}">{{ post.title }}</a><br />
-{% endfor %}
+<h4>Related Posts</h4>
+<ul>
+  {% for post in site.related_posts limit:5 %}
+  <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+</ul>
+
