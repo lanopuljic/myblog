@@ -116,7 +116,7 @@ Start up Apache:
 
 If you get follwoing meesage
 
-Starting httpd: httpd: Could not reliably determine the server's fully qualified domain name, using puppetmaster01.xonal.dev.com for ServerName
+>Starting httpd: httpd: Could not reliably determine the server's fully qualified domain name, using puppetmaster01.xonal.dev.com for ServerName
 
 Edit host file and add the server and ip address.
 {% highlight bash linenos %}vi /etc/hosts{% endhighlight %}
