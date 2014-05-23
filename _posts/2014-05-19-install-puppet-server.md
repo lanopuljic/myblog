@@ -133,3 +133,7 @@ Make sure the port is open and it’s listening:
 netstat -ln | grep 8140
 tcp    0  0 0.0.0.0:8140         0.0.0.0:*              LISTEN
 {% endhighlight %}
+<br>
+{% for post in site.related_posts %}
+  <a href="{{ post.url }}">{{ post.title }}</a><br />
+{% endfor %}

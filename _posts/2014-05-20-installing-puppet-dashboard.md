@@ -199,3 +199,8 @@ Restart dashboard
 {% highlight bash linenos %} service httpd restart{% endhighlight %}
 
 Loging to dashboard and see if it works.
+
+<br>
+{% for post in site.related_posts %}
+  <a href="{{ post.url }}">{{ post.title }}</a><br />
+{% endfor %}
