@@ -110,14 +110,24 @@ chmod 0666 /usr/share/puppet-dashboard/log/production.log
 {% endhighlight %}
 
 Restart the https service
-{% highlight bash linenos %}Restart httpd service{% endhighlight %}
+{% highlight bash linenos %}service httpd restart{% endhighlight %}
 
-If ther is no error you should be able to load puppet dashboard from your browser.
+If ther is no error you should be able to load puppet dashboard from your browser that looks like this.
+
+<figure>
+  <a href="/images/puppet_dashboard.png" target="_blank"><img src="/images/puppet_dashboard.png"></a>
+  <figcaption> Puppet Dashboard</figcaption>
+</figure>
 
 
-###To enable inventory support,
+###Enable inventory support
 
-In a nutshell, you need to change just a few settings. Go to settings.yml and change:
+When you add a node to puppet, Click on the node and you will see ```INVENTORY``` at first this will not display anything,
+if you follow the instruction below you will get inventory working.
+
+In a nutshell, you need to change just a few settings.
+
+Go to settings.yml and change:
 
 {% highlight bash linenos %}vi /usr/share/puppet-dashboard/config/settings.yml{% endhighlight %}
 
