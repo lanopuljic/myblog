@@ -79,8 +79,8 @@ Listen 8140
     # Only allow high security cryptography. Alter if needed for compatibility.
     SSLProtocol             All -SSLv2
     SSLCipherSuite          HIGH:!ADH:RC4+RSA:-MEDIUM:-LOW:-EXP
-    SSLCertificateFile      /var/lib/puppet/ssl/certs/puppetmaster01.xonal.com.pem
-    SSLCertificateKeyFile   /var/lib/puppet/ssl/private_keys/puppetmaster01.xonal.com.pem
+    SSLCertificateFile      /var/lib/puppet/ssl/certs/puppetmaster01.xonal.dev.com.pem
+    SSLCertificateKeyFile   /var/lib/puppet/ssl/private_keys/puppetmaster01.dev.xonal.com.pem
     SSLCertificateChainFile /var/lib/puppet/ssl/ca/ca_crt.pem
     SSLCACertificateFile    /var/lib/puppet/ssl/ca/ca_crt.pem
     SSLCARevocationFile     /var/lib/puppet/ssl/ca/ca_crl.pem
@@ -116,7 +116,7 @@ Start up Apache:
 
 If you get follwoing meesage
 
-Starting httpd: httpd: Could not reliably determine the server's fully qualified domain name, using puppetmaster01.xonal.com for ServerName
+Starting httpd: httpd: Could not reliably determine the server's fully qualified domain name, using puppetmaster01.xonal.dev.com for ServerName
 
 Edit host file and add the server and ip address.
 {% highlight bash linenos %}vi /etc/hosts{% endhighlight %}
