@@ -31,7 +31,7 @@ Logon to agent node
 
 {% highlight text linenos %}
     puppet agent -t
-	Info: Creating a new SSL key for vlxdb2dev01.qbe.com.au
+	Info: Creating a new SSL key for test.xonal.dev.com
 	Info: Caching certificate for ca
 	Info: csr_attributes file loading from /etc/puppet/csr_attributes.yaml
 	Info: Creating a new SSL certificate request for test.xonal.dev.com
