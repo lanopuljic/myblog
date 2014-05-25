@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Unable to fetch my node definition"
+description: "Unable to fetch my node definition, but the agent run will continue"
 modified: 2014-05-26 09:21:51 +1000
 category: articles
 tags: [puppet, error]
