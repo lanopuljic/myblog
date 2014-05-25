@@ -51,3 +51,12 @@ If new certificate is present, you now need to sign it.
 ### Go back to agent node server and run:
 
 {% highlight text linenos %} puppet agent -t{% endhighlight %}
+
+<h4>Related Posts</h4>
+<ul>
+  {% for post in site.related_posts limit:5 %}
+  <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+</ul>
+
+
