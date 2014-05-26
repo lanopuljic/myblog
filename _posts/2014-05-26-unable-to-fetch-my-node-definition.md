@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Unable to fetch my node definition"
-description: "Unable to fetch my node definition, but the agent run will continue"
+title: Unable to fetch my node definition
+description: "Unable to fetch my node definition but the agent run will continue"
 modified: 2014-05-26 09:21:51 +1000
 category: articles
 tags: [puppet, error]
@@ -12,6 +12,7 @@ image:
 comments: true
 share: true
 ---
+
 {% highlight text %}
 Warning: Unable to fetch my node definition, but the agent run will continue:
 Warning: SSL_connect returned=1 errno=0 state=SSLv3 read server session ticket A: sslv3 alert certificate revoked
