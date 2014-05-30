@@ -12,7 +12,6 @@ image:
 comments: true
 share: true
 ---
-
 {% highlight text %}
 Warning: Unable to fetch my node definition, but the agent run will continue:
 Warning: SSL_connect returned=1 errno=0 state=SSLv3 read server session ticket A: sslv3 alert certificate revoked
