@@ -6,7 +6,7 @@ modified: 2014-05-26 09:21:51 +1000
 category: articles
 tags: [puppet, error]
 image:
-  feature: site-logo.png
+  feature: 
   credit: 
   creditlink: 
 comments: true
