@@ -103,4 +103,9 @@ As you can see above ```mylog.log``` has been rotated with date applyed at the e
 This would only work once in a day becouse of the date tag will be the same, if you want to have multiple logs with in the day remove 
 ```dateext``` and let it rotate automaticly with adding a number like in this example ```mylog.log.1``` 
 
-
+<h4>Related Posts</h4>
+<ul>
+  {% for post in site.related_posts limit:5 %}
+  <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+</ul>
