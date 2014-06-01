@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Logrotate Utility on Linux"
+title: Logrotate Utility on Linux
 description: "How to rotate logs using logrotate"
 modified: 2014-05-30 14:37:56 +1000
 category: articles
