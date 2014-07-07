@@ -3,7 +3,7 @@ layout: post
 title: "Installing MySQL Server"
 description: "How to Install MySQL Server"
 category: articles
-tags: [MySQL]
+tags: [MySQL, RoR, CentOS 6.5]
 image:
   feature:
   credit:

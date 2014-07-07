@@ -2,7 +2,8 @@
 layout: post
 title: "Installing Ruby on Rails"
 description: "How to Install Ruby on Rails"
-tags: [RoR, Ruby on Rails]
+category: articles
+tags: [RoR, Ruby on Rails, CentOS 6.5]
 image:
   feature:
   credit:

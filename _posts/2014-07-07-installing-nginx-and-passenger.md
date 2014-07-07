@@ -3,7 +3,7 @@ layout: post
 title: "Installing Nginx and Passenger"
 description: "How to Install Nginx and Passenger on CentOS 6.5"
 category: articles
-tags: [RoR, Nginx, Passenger]
+tags: [RoR, Nginx, Passenger CentOS 6.5]
 image:
   feature:
   credit:
