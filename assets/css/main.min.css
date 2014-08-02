@@ -4530,12 +4530,12 @@ span + .entry-title {
 @media only screen and (min-width: 62.5em) {
   .author-photo {
     display: block;
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     margin-bottom: 10px;
-    -webkit-border-radius: 150px;
-       -moz-border-radius: 150px;
-            border-radius: 150px;
+    -webkit-border-radius: 10px;
+       -moz-border-radius: 10px;
+            border-radius: 10px;
     *zoom: 1;
   }
   .author-photo:before,
