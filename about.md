@@ -9,7 +9,7 @@ image:
   feature: desk.jpg
 ---
 
-My name is Lano and I'm a strong and passionate advocate for open source software and am working towards ultimately becoming a source developer. This blog is the beginning of that goal....
+My name is Lano and I'm a strong and passionate advocate for open source software and am working towards ultimately becoming a developer. This blog is the beginning of that goal....
 
 My day job maintaining the running of the IT system at QBE Insurance Asia Pacific keeps me busy, but I felt that I needed to start a blog so that I have an outlet to do random sh!t I can't do at work!
 
