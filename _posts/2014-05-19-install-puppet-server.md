@@ -6,9 +6,9 @@ modified: 2014-05-19 09:36:56 +1000
 category: articles
 tags: [puppet,centOS 6.5]
 image:
-  feature: 
-  credit: 
-  creditlink: 
+  feature:
+  credit:
+  creditlink:
 comments: true
 share: true
 ---
@@ -26,7 +26,7 @@ share: true
 
 {% highlight bash linenos %}yum install -y httpd httpd-devel mod_ssl ruby-devel rubygems gcc-c++ curl-devel zlib-devel make automake openssl-devel{% endhighlight %}
 
-    
+
 #### Install Rack/Passenger
 {% highlight bash linenos %}
 gem install rack passenger
@@ -45,7 +45,7 @@ LoadModule passenger_module /usr/lib/ruby/gems/1.8/gems/passenger-4.0.42/buildou
 PassengerRoot /usr/lib/ruby/gems/1.8/gems/passenger-4.0.42```
 PassengerDefaultRuby /usr/bin/ruby
 {% endhighlight %}
- 
+
 #### Create the directory structure for Puppet Master Rack Application
 
 {% highlight bash linenos %}
@@ -108,7 +108,7 @@ Listen 8140
 </VirtualHost>
 {% endhighlight %}
 Start up Apache:
- 
+
 {% highlight bash linenos %}
 /etc/init.d/puppetmaster stop
 /etc/init.d/httpd start
@@ -140,6 +140,3 @@ tcp    0  0 0.0.0.0:8140         0.0.0.0:*              LISTEN
   <li><a href="{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
 </ul>
-
-
-
